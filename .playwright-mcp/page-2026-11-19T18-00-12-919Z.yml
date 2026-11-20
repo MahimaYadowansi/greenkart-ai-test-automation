@@ -1,0 +1,366 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: GREENKART
+      - generic [ref=e8]:
+        - searchbox "Search for Vegetables and Fruits" [ref=e9]
+        - button [ref=e10] [cursor=pointer]
+      - generic [ref=e11]:
+        - link "🎯 I’ll help you prepare for your next QA job — Explore the QA Career Accelerator." [ref=e12] [cursor=pointer]:
+          - /url: https://rahulshettyacademy.com/qa-career-accelerator-job-ready
+        - link "Top Deals" [ref=e13] [cursor=pointer]:
+          - /url: "#/offers"
+        - link "Flight Booking" [ref=e14] [cursor=pointer]:
+          - /url: https://rahulshettyacademy.com/dropdownsPractise/
+        - table [ref=e16]:
+          - rowgroup [ref=e17]:
+            - row [ref=e18]:
+              - cell "Items" [ref=e19]
+              - cell ":" [ref=e20]
+              - cell [ref=e21]:
+                - strong [ref=e22]: "0"
+            - row [ref=e23]:
+              - cell "Price" [ref=e24]
+              - cell ":" [ref=e25]
+              - cell [ref=e26]:
+                - strong [ref=e27]: "0"
+        - link [ref=e28] [cursor=pointer]:
+          - /url: "#"
+          - img "Cart" [ref=e29]
+  - generic [ref=e370]:
+    - generic [ref=e371]:
+      - img "Brocolli - 1 Kg" [ref=e373]
+      - heading "Brocolli - 1 Kg" [level=4] [ref=e374]
+      - paragraph [ref=e375]: ₹ 120
+      - generic [ref=e376]:
+        - link "–" [ref=e377] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e378]: "3"
+        - link "+" [active] [ref=e379] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e381] [cursor=pointer]
+    - generic [ref=e382]:
+      - img "Cauliflower - 1 Kg" [ref=e384]
+      - heading "Cauliflower - 1 Kg" [level=4] [ref=e385]
+      - paragraph [ref=e386]: ₹ 60
+      - generic [ref=e387]:
+        - link "–" [ref=e388] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e389]: "1"
+        - link "+" [ref=e390] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e392] [cursor=pointer]
+    - generic [ref=e393]:
+      - img "Cucumber - 1 Kg" [ref=e395]
+      - heading "Cucumber - 1 Kg" [level=4] [ref=e396]
+      - paragraph [ref=e397]: ₹ 48
+      - generic [ref=e398]:
+        - link "–" [ref=e399] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e400]: "1"
+        - link "+" [ref=e401] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e403] [cursor=pointer]
+    - generic [ref=e404]:
+      - img "Beetroot - 1 Kg" [ref=e406]
+      - heading "Beetroot - 1 Kg" [level=4] [ref=e407]
+      - paragraph [ref=e408]: ₹ 32
+      - generic [ref=e409]:
+        - link "–" [ref=e410] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e411]: "1"
+        - link "+" [ref=e412] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e414] [cursor=pointer]
+    - generic [ref=e415]:
+      - img "Carrot - 1 Kg" [ref=e417]
+      - heading "Carrot - 1 Kg" [level=4] [ref=e418]
+      - paragraph [ref=e419]: ₹ 56
+      - generic [ref=e420]:
+        - link "–" [ref=e421] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e422]: "1"
+        - link "+" [ref=e423] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e425] [cursor=pointer]
+    - generic [ref=e426]:
+      - img "Tomato - 1 Kg" [ref=e428]
+      - heading "Tomato - 1 Kg" [level=4] [ref=e429]
+      - paragraph [ref=e430]: ₹ 16
+      - generic [ref=e431]:
+        - link "–" [ref=e432] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e433]: "1"
+        - link "+" [ref=e434] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e436] [cursor=pointer]
+    - generic [ref=e437]:
+      - img "Beans - 1 Kg" [ref=e439]
+      - heading "Beans - 1 Kg" [level=4] [ref=e440]
+      - paragraph [ref=e441]: ₹ 82
+      - generic [ref=e442]:
+        - link "–" [ref=e443] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e444]: "1"
+        - link "+" [ref=e445] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e447] [cursor=pointer]
+    - generic [ref=e448]:
+      - img "Brinjal - 1 Kg" [ref=e450]
+      - heading "Brinjal - 1 Kg" [level=4] [ref=e451]
+      - paragraph [ref=e452]: ₹ 35
+      - generic [ref=e453]:
+        - link "–" [ref=e454] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e455]: "1"
+        - link "+" [ref=e456] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e458] [cursor=pointer]
+    - generic [ref=e459]:
+      - img "Capsicum" [ref=e461]
+      - heading "Capsicum" [level=4] [ref=e462]
+      - paragraph [ref=e463]: ₹ 60
+      - generic [ref=e464]:
+        - link "–" [ref=e465] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e466]: "1"
+        - link "+" [ref=e467] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e469] [cursor=pointer]
+    - generic [ref=e470]:
+      - img "Mushroom - 1 Kg" [ref=e472]
+      - heading "Mushroom - 1 Kg" [level=4] [ref=e473]
+      - paragraph [ref=e474]: ₹ 75
+      - generic [ref=e475]:
+        - link "–" [ref=e476] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e477]: "1"
+        - link "+" [ref=e478] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e480] [cursor=pointer]
+    - generic [ref=e481]:
+      - img "Potato - 1 Kg" [ref=e483]
+      - heading "Potato - 1 Kg" [level=4] [ref=e484]
+      - paragraph [ref=e485]: ₹ 22
+      - generic [ref=e486]:
+        - link "–" [ref=e487] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e488]: "1"
+        - link "+" [ref=e489] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e491] [cursor=pointer]
+    - generic [ref=e492]:
+      - img "Pumpkin - 1 Kg" [ref=e494]
+      - heading "Pumpkin - 1 Kg" [level=4] [ref=e495]
+      - paragraph [ref=e496]: ₹ 48
+      - generic [ref=e497]:
+        - link "–" [ref=e498] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e499]: "1"
+        - link "+" [ref=e500] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e502] [cursor=pointer]
+    - generic [ref=e503]:
+      - img "Corn - 1 Kg" [ref=e505]
+      - heading "Corn - 1 Kg" [level=4] [ref=e506]
+      - paragraph [ref=e507]: ₹ 75
+      - generic [ref=e508]:
+        - link "–" [ref=e509] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e510]: "1"
+        - link "+" [ref=e511] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e513] [cursor=pointer]
+    - generic [ref=e514]:
+      - img "Onion - 1 Kg" [ref=e516]
+      - heading "Onion - 1 Kg" [level=4] [ref=e517]
+      - paragraph [ref=e518]: ₹ 16
+      - generic [ref=e519]:
+        - link "–" [ref=e520] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e521]: "1"
+        - link "+" [ref=e522] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e524] [cursor=pointer]
+    - generic [ref=e525]:
+      - img "Apple - 1 Kg" [ref=e527]
+      - heading "Apple - 1 Kg" [level=4] [ref=e528]
+      - paragraph [ref=e529]: ₹ 72
+      - generic [ref=e530]:
+        - link "–" [ref=e531] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e532]: "1"
+        - link "+" [ref=e533] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e535] [cursor=pointer]
+    - generic [ref=e536]:
+      - img "Banana - 1 Kg" [ref=e538]
+      - heading "Banana - 1 Kg" [level=4] [ref=e539]
+      - paragraph [ref=e540]: ₹ 45
+      - generic [ref=e541]:
+        - link "–" [ref=e542] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e543]: "1"
+        - link "+" [ref=e544] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e546] [cursor=pointer]
+    - generic [ref=e547]:
+      - img "Grapes - 1 Kg" [ref=e549]
+      - heading "Grapes - 1 Kg" [level=4] [ref=e550]
+      - paragraph [ref=e551]: ₹ 60
+      - generic [ref=e552]:
+        - link "–" [ref=e553] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e554]: "1"
+        - link "+" [ref=e555] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e557] [cursor=pointer]
+    - generic [ref=e558]:
+      - img "Mango - 1 Kg" [ref=e560]
+      - heading "Mango - 1 Kg" [level=4] [ref=e561]
+      - paragraph [ref=e562]: ₹ 75
+      - generic [ref=e563]:
+        - link "–" [ref=e564] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e565]: "1"
+        - link "+" [ref=e566] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e568] [cursor=pointer]
+    - generic [ref=e569]:
+      - img "Musk Melon - 1 Kg" [ref=e571]
+      - heading "Musk Melon - 1 Kg" [level=4] [ref=e572]
+      - paragraph [ref=e573]: ₹ 36
+      - generic [ref=e574]:
+        - link "–" [ref=e575] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e576]: "1"
+        - link "+" [ref=e577] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e579] [cursor=pointer]
+    - generic [ref=e580]:
+      - img "Orange - 1 Kg" [ref=e582]
+      - heading "Orange - 1 Kg" [level=4] [ref=e583]
+      - paragraph [ref=e584]: ₹ 75
+      - generic [ref=e585]:
+        - link "–" [ref=e586] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e587]: "1"
+        - link "+" [ref=e588] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e590] [cursor=pointer]
+    - generic [ref=e591]:
+      - img "Pears - 1 Kg" [ref=e593]
+      - heading "Pears - 1 Kg" [level=4] [ref=e594]
+      - paragraph [ref=e595]: ₹ 69
+      - generic [ref=e596]:
+        - link "–" [ref=e597] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e598]: "1"
+        - link "+" [ref=e599] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e601] [cursor=pointer]
+    - generic [ref=e602]:
+      - img "Pomegranate - 1 Kg" [ref=e604]
+      - heading "Pomegranate - 1 Kg" [level=4] [ref=e605]
+      - paragraph [ref=e606]: ₹ 95
+      - generic [ref=e607]:
+        - link "–" [ref=e608] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e609]: "1"
+        - link "+" [ref=e610] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e612] [cursor=pointer]
+    - generic [ref=e613]:
+      - img "Raspberry - 1/4 Kg" [ref=e615]
+      - heading "Raspberry - 1/4 Kg" [level=4] [ref=e616]
+      - paragraph [ref=e617]: ₹ 160
+      - generic [ref=e618]:
+        - link "–" [ref=e619] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e620]: "1"
+        - link "+" [ref=e621] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e623] [cursor=pointer]
+    - generic [ref=e624]:
+      - img "Strawberry - 1/4 Kg" [ref=e626]
+      - heading "Strawberry - 1/4 Kg" [level=4] [ref=e627]
+      - paragraph [ref=e628]: ₹ 180
+      - generic [ref=e629]:
+        - link "–" [ref=e630] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e631]: "1"
+        - link "+" [ref=e632] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e634] [cursor=pointer]
+    - generic [ref=e635]:
+      - img "Water Melon - 1 Kg" [ref=e637]
+      - heading "Water Melon - 1 Kg" [level=4] [ref=e638]
+      - paragraph [ref=e639]: ₹ 28
+      - generic [ref=e640]:
+        - link "–" [ref=e641] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e642]: "1"
+        - link "+" [ref=e643] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e645] [cursor=pointer]
+    - generic [ref=e646]:
+      - img "Almonds - 1/4 Kg" [ref=e648]
+      - heading "Almonds - 1/4 Kg" [level=4] [ref=e649]
+      - paragraph [ref=e650]: ₹ 200
+      - generic [ref=e651]:
+        - link "–" [ref=e652] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e653]: "1"
+        - link "+" [ref=e654] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e656] [cursor=pointer]
+    - generic [ref=e657]:
+      - img "Pista - 1/4 Kg" [ref=e659]
+      - heading "Pista - 1/4 Kg" [level=4] [ref=e660]
+      - paragraph [ref=e661]: ₹ 190
+      - generic [ref=e662]:
+        - link "–" [ref=e663] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e664]: "1"
+        - link "+" [ref=e665] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e667] [cursor=pointer]
+    - generic [ref=e668]:
+      - img "Nuts Mixture - 1 Kg" [ref=e670]
+      - heading "Nuts Mixture - 1 Kg" [level=4] [ref=e671]
+      - paragraph [ref=e672]: ₹ 950
+      - generic [ref=e673]:
+        - link "–" [ref=e674] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e675]: "1"
+        - link "+" [ref=e676] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e678] [cursor=pointer]
+    - generic [ref=e679]:
+      - img "Cashews - 1 Kg" [ref=e681]
+      - heading "Cashews - 1 Kg" [level=4] [ref=e682]
+      - paragraph [ref=e683]: ₹ 650
+      - generic [ref=e684]:
+        - link "–" [ref=e685] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e686]: "1"
+        - link "+" [ref=e687] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e689] [cursor=pointer]
+    - generic [ref=e690]:
+      - img "Walnuts - 1/4 Kg" [ref=e692]
+      - heading "Walnuts - 1/4 Kg" [level=4] [ref=e693]
+      - paragraph [ref=e694]: ₹ 170
+      - generic [ref=e695]:
+        - link "–" [ref=e696] [cursor=pointer]:
+          - /url: "#"
+        - spinbutton [ref=e697]: "1"
+        - link "+" [ref=e698] [cursor=pointer]:
+          - /url: "#"
+      - button "ADD TO CART" [ref=e700] [cursor=pointer]
+  - contentinfo [ref=e362]:
+    - paragraph [ref=e363]:
+      - text: © 2019
+      - strong [ref=e364]: GreenKart
+      - text: "- buy veg and fruits online"
+  - text: ₹ ₹

@@ -1,0 +1,76 @@
+- generic [ref=e1727]:
+  - banner [ref=e1728]:
+    - generic [ref=e1729]:
+      - generic [ref=e1730]: GREENKART
+      - link "🎯 I’ll help you prepare for your next QA job — Explore the QA Career Accelerator." [ref=e1732] [cursor=pointer]:
+        - /url: https://rahulshettyacademy.com/qa-career-accelerator-job-ready
+  - generic [ref=e1737]:
+    - generic [ref=e1738]:
+      - generic [ref=e1739]:
+        - generic [ref=e1740]:
+          - generic [ref=e1741]: "Page size:"
+          - combobox "Page size:" [ref=e1742]:
+            - option "5" [selected]
+            - option "10"
+            - option "20"
+        - generic [ref=e1743]:
+          - generic [ref=e1744]: "Search:"
+          - searchbox "Search:" [ref=e1745]
+      - list "Pagination" [ref=e1747]:
+        - listitem:
+          - button "First" [disabled]
+        - listitem:
+          - button "Previous" [disabled]
+        - listitem [ref=e1748]:
+          - button "1 (current)" [ref=e1749] [cursor=pointer]:
+            - text: "1"
+            - generic [ref=e1750]: (current)
+        - listitem [ref=e1751]:
+          - button "2" [ref=e1752] [cursor=pointer]
+        - listitem [ref=e1753]:
+          - button "3" [ref=e1754] [cursor=pointer]
+        - listitem [ref=e1755]:
+          - button "4" [ref=e1756] [cursor=pointer]
+        - listitem [ref=e1757]:
+          - button "Next" [ref=e1758] [cursor=pointer]
+        - listitem [ref=e1759]:
+          - button "Last" [ref=e1760] [cursor=pointer]
+    - 'table "Sorted by name: descending order" [ref=e1761]':
+      - alert [ref=e1762]: "Sorted by name: descending order"
+      - rowgroup [ref=e1763]:
+        - row [ref=e1764]:
+          - 'columnheader "Veg/fruit name: activate to sort column ascending" [ref=e1765] [cursor=pointer]': Veg/fruit name
+          - 'columnheader "Price: activate to sort column ascending" [ref=e1767] [cursor=pointer]': Price
+          - 'columnheader "Discount price: activate to sort column ascending" [ref=e1768] [cursor=pointer]': Discount price
+      - rowgroup [ref=e1769]:
+        - row [ref=e1770]:
+          - cell "Wheat" [ref=e1771]
+          - cell "67" [ref=e1772]
+          - cell "28" [ref=e1773]
+        - row [ref=e1774]:
+          - cell "Tomato" [ref=e1775]
+          - cell "37" [ref=e1776]
+          - cell "26" [ref=e1777]
+        - row [ref=e1778]:
+          - cell "Strawberry" [ref=e1779]
+          - cell "23" [ref=e1780]
+          - cell "15" [ref=e1781]
+        - row [ref=e1782]:
+          - cell "Rice" [ref=e1783]
+          - cell "37" [ref=e1784]
+          - cell "46" [ref=e1785]
+        - row [ref=e1786]:
+          - cell "Potato" [ref=e1787]
+          - cell "34" [ref=e1788]
+          - cell "22" [ref=e1789]
+  - generic [ref=e1790]:
+    - generic [ref=e1791]: Delivery Date
+    - generic [ref=e1793]:
+      - generic [ref=e1794]:
+        - spinbutton "--" [ref=e1795]
+        - generic [ref=e1796]: /
+        - spinbutton "--" [ref=e1797]
+        - generic [ref=e1798]: /
+        - spinbutton "----" [ref=e1799]
+      - button [active] [ref=e1800] [cursor=pointer]
+      - button [ref=e1804] [cursor=pointer]
