@@ -1,10 +1,11 @@
 import { expect, Locator, Page } from '@playwright/test';
+import { environment } from '../utils/environment';
 
 export abstract class BasePage {
   constructor(protected readonly page: Page) {}
 
   async goto(path = ''): Promise<void> {
-    await this.page.goto(`${process.env.BASE_URL ?? 'https://rahulshettyacademy.com/seleniumPractise/#/'}${path}`);
+    await this.page.goto(`${environment.baseUrl}${path}`);
   }
 
   async expectUrlFragment(fragment: string): Promise<void> {

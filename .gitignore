@@ -6,3 +6,7 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Allure (generated per run; keep allure-report/history/ out of source control too)
+/allure-results/
+/allure-report/

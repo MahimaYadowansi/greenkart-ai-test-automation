@@ -1,4 +1,5 @@
 import { test as base, expect } from '@playwright/test';
+import { environment } from '../utils/environment';
 import { StorefrontPage } from '../pages/storefront.page';
 import { CheckoutPage } from '../pages/checkout.page';
 import { CountryPage } from '../pages/country.page';
@@ -21,15 +22,18 @@ export const test = base.extend<TestFixtures>({
     await use();
 
     if (testInfo.status !== testInfo.expectedStatus) {
-      await page.screenshot({
-        path: testInfo.outputPath(`failure-${testInfo.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}.png`),
-        fullPage: true,
-      });
+      const screenshotPath = testInfo.outputPath(`failure-${testInfo.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}.png`);
+      await page.screenshot({ path: screenshotPath, fullPage: true });
+
+      // Also surface the failure screenshot and the failing URL directly on the
+      // Allure test case, not just as a file under test-results/.
+      await testInfo.attach('Failure screenshot', { path: screenshotPath, contentType: 'image/png' });
+      await testInfo.attach('Failure URL', { body: page.url(), contentType: 'text/plain' });
     }
   }, { auto: true }],
 
   storefront: async ({ page }, use) => {
-    await page.goto(process.env.BASE_URL ?? 'https://rahulshettyacademy.com/seleniumPractise/#/');
+    await page.goto(environment.baseUrl);
     await use(new StorefrontPage(page));
   },
 

@@ -6,8 +6,10 @@
    "scripts": {
     "test": "playwright test",
     "test:allure": "playwright test",
-    "allure:generate": "allure generate ./allure-results --clean",
-    "allure:open": "allure open ./allure-report"
+    "allure:history": "node scripts/copy-allure-history.js",
+    "allure:generate": "npm run allure:history && allure generate ./allure-results --clean",
+    "allure:open": "allure open ./allure-report",
+    "report": "npm run test:allure; npm run allure:generate && npm run allure:open"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
     "@playwright/test": "^1.65.1",
     "@types/node": "^26.6.6",
     "allure-commandline": "^2.46.1",
+    "allure-js-commons": "^3.15.0",
     "allure-playwright": "^3.15.0"
   }
 }

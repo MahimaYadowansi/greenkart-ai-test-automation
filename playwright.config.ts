@@ -1,4 +1,7 @@
+
 import { defineConfig, devices } from '@playwright/test';
+import { environment } from './tests/utils/environment';
+import * as os from 'node:os';
 
 /**
  * Read environment variables from file.
@@ -23,20 +26,99 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 1 : environment.workers,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-  ['html', { open: 'Always' }],
-  ['allure-playwright' , { open: 'Always' }]
+  ['html', {
+    outputFolder: 'playwright-report',
+    open: 'never',
+  }],
+  [
+    'allure-playwright',
+    {
+      resultsDir: 'allure-results',
+
+      detail: true,
+
+      suiteTitle: true,
+
+      environmentInfo: {
+        Project: 'Playwright Automation Project',
+        Application: 'E-Commerce Application-GreenKart',
+        Environment: process.env.TEST_ENV || 'QA',
+        Base_URL: environment.baseUrl,
+
+        Automation_Tool: 'Playwright',
+        Programming_Language: 'TypeScript',
+        Framework: 'Playwright Test',
+
+        Browser: 'Chromium',
+        Operating_System: os.platform(),
+        OS_Version: os.release(),
+
+        Node_Version: process.version,
+        Architecture: os.arch(),
+
+        Execution_Type: process.env.CI
+          ? 'CI/CD Pipeline'
+          : 'Local Execution',
+
+        Build_Number: process.env.BUILD_NUMBER || 'Local-Build-001',
+        QA_Team: 'QA Automation Team',
+      },
+
+      globalLabels: [
+        { name: 'project', value: 'Playwright Automation' },
+        { name: 'team', value: 'QA Automation' },
+        { name: 'framework', value: 'Playwright' },
+        { name: 'language', value: 'TypeScript' },
+      ],
+
+      links: {
+        issue: {
+          nameTemplate: 'Jira Issue #%s',
+          urlTemplate: 'https://your-company.atlassian.net/browse/%s',
+        },
+        tms: {
+          nameTemplate: 'Test Case #%s',
+          urlTemplate: 'https://your-tms-tool.com/cases/%s',
+        },
+      },
+
+      categories: [
+        {
+          name: 'Product Defects',
+          messageRegex: '.*Expected.*received.*',
+          matchedStatuses: ['failed'],
+        },
+        {
+          name: 'Automation Issues',
+          messageRegex: '(?i).*(timeout|strict mode violation).*',
+          matchedStatuses: ['failed', 'broken'],
+        },
+        {
+          name: 'Environment Issues',
+          messageRegex: '.*(ECONNREFUSED|ENOTFOUND).*',
+          matchedStatuses: ['failed', 'broken'],
+        },
+        {
+          name: 'Assertion Failures',
+          messageRegex: '.*AssertionError.*',
+          matchedStatuses: ['failed'],
+        },
+      ],
+    },
+  ]
 ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    /* Base URL to use in actions like `await page.goto('')`. */
-    // baseURL: 'http://localhost:3000',
+    /* Base URL to use in actions like `await page.goto('')`. Set via TEST_ENV=qa|staging|production or override with BASE_URL. */
+    baseURL: environment.baseUrl,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'retain-on-failure-and-retries',
-    screenshot:'only-on-failure'
+    trace: environment.traceMode,
+    screenshot: environment.screenshotMode,
+    video: environment.videoMode,
   },
 
   /* Configure projects for major browsers */
